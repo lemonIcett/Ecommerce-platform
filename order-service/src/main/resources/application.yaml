@@ -19,7 +19,7 @@ spring:
       enabled: true
 
 product-service:
-  url: http://localhost:8082
+  url: http://product-service:8082
 
 management:
   endpoints:
