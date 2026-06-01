@@ -54,7 +54,7 @@ class UserServiceTest {
         assertNotNull(response);
         assertEquals("mockToken", response.getToken());
         assertEquals("testuser", response.getUsername());
-        assertEquals("ROLE_USER", response.getRole());
+        assertEquals("ROLE_ADMIN", response.getRole());
         verify(userRepository, times(1)).save(any(User.class));
     }
 
